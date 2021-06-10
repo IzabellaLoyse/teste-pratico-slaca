@@ -1,0 +1,51 @@
+//  https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+//  https://www.nicchan.me/blog/tips-for-focus-styles/#consider-adding-a-little-bit-of-breathing-room
+
+html {
+	box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	outline-offset: 0.25rem;
+}
+
+
+body {
+	height: 100%;
+	background-color: map-get($colors, "background-color-page");
+	font-family: $global-font-family;
+	font-size: $global-font-size;
+}
+
+
+h3,
+h4,
+p,
+input,
+textarea {
+	font-family: $second-font-family;
+}
+
+
+textarea {
+	resize: none;
+}
+
+
+img,
+video {
+	max-width: 100%;
+}
+
+
+input::placeholder,
+input::-moz-placeholder,
+input::-webkit-input-placeholder,
+input::-ms-input-placeholder {
+	color: map-get($colors, "card-text-color");
+}

@@ -1,0 +1,48 @@
+/* ============================================================================ 
+  *Colors
+=============================================================================*/
+
+$colors: (
+	"background-color-page": rgb(255, 255, 255),
+  "header-title-color":  rgb(113, 91, 91),
+  "box-header-color":  rgb(253, 242, 236),
+  "card-text-color": rgb(77, 77, 77),
+  "border-color":  rgb(237, 237, 237),
+	"box-shadow-color": rgba(0, 0, 0, 0.12),
+	"sidebar-shadow-color": rgba(0, 0, 0, 0.25),
+  
+);
+
+
+
+
+
+/* ============================================================================ 
+  *Typography
+=============================================================================*/
+
+$global-font-family: 'Roboto', sans-serif;
+$second-font-family: 'Quicksand', sans-serif;
+
+
+$font-weight:(
+"roboto-regular": 400,
+"roboto-medium": 500,
+"roboto-bold": 700,
+"roboto-black": 900,
+"quicksand-regular": 400,
+"quicksand-medium": 500,
+"quicksand-bold": 700,
+);
+
+
+
+
+
+
+/* ============================================================================ 
+  *Measures
+=============================================================================*/
+
+$global-font-size: 93.75%; //15px
+$global-border-radius: Rem(4);
