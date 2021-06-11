@@ -3,15 +3,20 @@
 =============================================================================*/
 
 $colors: (
-	"background-color-page": rgb(255, 255, 255),
-  "header-title-color":  rgb(113, 91, 91),
+	"color-page": rgb(255, 255, 255),
+  "header-text-color":  rgb(113, 91, 91),
   "box-header-color":  rgb(253, 242, 236),
+  "active-menu-background": rgb(253, 241, 235),
   "card-text-color": rgb(77, 77, 77),
   "border-color":  rgb(237, 237, 237),
+  "menu-border-color":  rgb(232, 232, 232),
 	"box-shadow-color": rgba(0, 0, 0, 0.12),
 	"sidebar-shadow-color": rgba(0, 0, 0, 0.25),
+  "first-gradient-color": rgb(255, 177, 82),
+  "second-gradient-color": rgb(238, 121, 58),
   
 );
+ 
 
 
 
@@ -46,3 +51,18 @@ $font-weight:(
 
 $global-font-size: 93.75%; //15px
 $global-border-radius: Rem(4);
+
+
+
+
+
+/* ============================================================================ 
+  *Mixins
+=============================================================================*/
+
+@mixin flex($display,$direction,$justify-content,$align-items) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  }

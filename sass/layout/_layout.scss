@@ -1,0 +1,25 @@
+.l-layout {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+
+.l-header {
+  grid-column: 2 / 4;
+}
+
+.l-sidebar-left {
+  grid-column: 1 / 2;
+}
+
+.l-main {
+  grid-column: 2 / 3;
+}
+
+.l-sidebar-right {
+  grid-column: 3 / 4;
+}
+
+.l-footer {
+  grid-column: 1 / 4;
+}

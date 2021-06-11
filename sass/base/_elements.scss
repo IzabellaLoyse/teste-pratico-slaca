@@ -15,9 +15,15 @@ html {
 }
 
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
 body {
 	height: 100%;
-	background-color: map-get($colors, "background-color-page");
+	background-color: map-get($colors, "color-page");
 	font-family: $global-font-family;
 	font-size: $global-font-size;
 }
@@ -26,6 +32,7 @@ body {
 h3,
 h4,
 p,
+li,
 input,
 textarea {
 	font-family: $second-font-family;
@@ -34,6 +41,16 @@ textarea {
 
 textarea {
 	resize: none;
+}
+
+
+li {
+	list-style: none;
+}
+
+a {
+	color: map-get($colors , "header-text-color");
+	text-decoration: none;
 }
 
 
