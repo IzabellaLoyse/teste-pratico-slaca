@@ -11,28 +11,30 @@
 		display: grid;
 		grid-template-columns: 200px 1fr 200px;
 		grid-template-rows: auto 1fr auto;
-		height: 100vh;
+		grid-template-areas:
+			"sidebar-left header header"
+			"sidebar-left main sidebar-right"
+			"sidebar-left footer footer";
 	}
 }
 
 
-.l-header {
-	grid-column: 2 / 4;
-	overflow-x: hidden;
+.l-sidebar-left {
+	grid-area: sidebar-left;
 }
 
-.l-sidebar-left {
-	grid-column: 1 / 2;
+.l-header {
+	grid-area: header;
 }
 
 .l-main {
-	grid-column: 2 / 3;
+	grid-area: main;
 }
 
 .l-sidebar-right {
-	grid-column: 3 / 4;
+	grid-area: sidebar-right;
 }
 
 .l-footer {
-	grid-column: 1 / 4;
+	grid-area: footer;
 }
