@@ -1,25 +1,38 @@
+/* ============================================================================ 
+  *Layout
+=============================================================================*/
+
 .l-layout {
-  display: grid;
-  grid-template: auto 1fr auto / auto 1fr auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	@include breakpoint(1000) {
+		display: grid;
+		grid-template-columns: 200px 1fr 200px;
+		grid-template-rows: auto 1fr auto;
+		height: 100vh;
+	}
 }
 
 
 .l-header {
-  grid-column: 2 / 4;
+	grid-column: 2 / 4;
+	overflow-x: hidden;
 }
 
 .l-sidebar-left {
-  grid-column: 1 / 2;
+	grid-column: 1 / 2;
 }
 
 .l-main {
-  grid-column: 2 / 3;
+	grid-column: 2 / 3;
 }
 
 .l-sidebar-right {
-  grid-column: 3 / 4;
+	grid-column: 3 / 4;
 }
 
 .l-footer {
-  grid-column: 1 / 4;
+	grid-column: 1 / 4;
 }
