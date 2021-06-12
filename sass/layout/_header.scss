@@ -1,0 +1,24 @@
+/* ============================================================================ 
+  *Header
+=============================================================================*/
+
+.l-header {
+  width: 100%;
+  height: Rem(84);
+  background-color: map-get($colors, "main-header-background" );
+  
+}
+
+
+.l-header__container {
+  width: 80vw;
+  margin-top: Rem(10);
+  margin-left: Rem(30);
+}
+
+
+.l-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

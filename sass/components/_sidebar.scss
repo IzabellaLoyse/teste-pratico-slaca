@@ -11,10 +11,10 @@
 	);
 
 	.c-sidebar__title {
+		@include text-properties(Rem(35),Rem(32));
+		padding-top: Rem(6);
 		font-weight: map-get($font-weight, "roboto-bold");
 		color: map-get($colors, "color-page");
-		line-height: Rem(35);
-		font-size: Rem(32);
 		text-align: center;
 		text-transform: uppercase;
 	}

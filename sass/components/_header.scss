@@ -1,0 +1,94 @@
+/* ============================================================================ 
+  *Components: Header
+=============================================================================*/
+
+.c-header__title {
+	color: map-get($colors, "header-title-color");
+	font-weight: map-get($font-weight, "roboto-regular");
+	text-align: left;
+
+	&:nth-of-type(1) {
+		@include text-properties(Rem(16), Rem(14));
+		padding-bottom: Rem(4);
+	}
+
+	&:nth-of-type(2) {
+		@include text-properties(Rem(26), Rem(22));
+	}
+
+	&:nth-of-type(3) {
+		@include text-properties(Rem(16), Rem(14));
+		font-family: $global-font-family;
+	}
+}
+
+
+.c-header__language {
+	padding-bottom: Rem(12);
+	margin-left: Rem(50);
+	position: relative;
+
+	&::before {
+		content: "";
+		background: no-repeat url(/img/icon/icone-linguagem.png);
+		position: absolute;
+		top: 6px;
+		right: 74px;
+		height: Rem(40);
+		width: Rem(20);
+	}
+}
+
+
+.c-header__select {
+	width: Rem(95);
+	height: Rem(34);
+	padding-left: Rem(22);
+	border: 1px solid map-get($colors, "select-border-color");
+	border-radius: $global-border-radius;
+	background-color: transparent;
+}
+
+
+.c-header-contact {
+	padding-bottom: Rem(21);
+	position: relative;
+}
+
+
+.c-header-contact__text {
+	text-align: right;
+	color: map-get($colors, "contact-text-color");
+	padding-left: Rem(60);
+
+	&:nth-of-type(1) {
+		@include text-properties(Rem(17), Rem(14));
+	}
+
+	&:nth-of-type(2) {
+		@include text-properties(Rem(15), Rem(12));
+	}
+}
+
+
+.c-header-contact__image {
+	border-radius: 50%;
+	width: Rem(40);
+	margin-right: Rem(20);
+}
+
+
+.c-header-contact__notification {
+	position: absolute;
+	top: 0;
+	right: 17px;
+	background-color: map-get($colors, "notification-color");
+	color: map-get($colors, "color-page");
+	font-weight: map-get($font-weight, "roboto-bold");
+	text-align: center;
+	font-size: Rem(10);
+	width: Rem(20);
+	height: Rem(15);
+	border-radius: Rem(10);
+	padding-top: Rem(2);
+}
