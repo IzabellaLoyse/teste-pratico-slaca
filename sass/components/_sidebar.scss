@@ -30,3 +30,57 @@
 	width: Rem(210);
 	height: Rem(260);
 }
+
+
+
+
+
+/* ============================================================================ 
+  *Components: Sidebar-right
+=============================================================================*/
+
+
+.c-sidebar-right__buttons {
+	padding-bottom: Rem(11);
+	display: flex;
+	flex-direction: row;
+	padding-right: Rem(100);
+}
+
+.c-sidebar-button {
+	background-color: map-get($colors, "main-page-color");
+	border: none;
+	border-radius: $global-border-radius;
+	margin-left: Rem(10);
+
+	&:nth-of-type(1) {
+		width: Rem(120);
+		height: Rem(31);
+		
+	}
+
+	&:nth-of-type(2) {
+		width: Rem(43);
+		height: Rem(31);
+		
+	}
+
+	&:nth-of-type(3) {
+		width: Rem(43);
+		height: Rem(31);
+		
+	}
+
+}
+
+.c-sidebar-button__link  {
+	@include flex(flex, row, space-around, center);
+	@include text-properties(Rem(19),Rem(16));
+	font-weight: map-get($font-weight , "roboto-medium" );
+	color: map-get($colors, "color-page");
+}
+
+.c-sidebar-button__icon {
+	width: Rem(19);
+	height: Rem(19);
+}

@@ -1,0 +1,15 @@
+
+
+.c-main__box {
+  padding-top: Rem(15);
+}
+
+
+.c-main__text {
+  @include text-properties(Rem(25),Rem(20));
+  color: map-get($colors , "main-page-color" );
+  font-weight: map-get($font-weight, "roboto-black");
+  letter-spacing: 0.05em;
+  text-align: left;
+  max-width: 800px;
+}

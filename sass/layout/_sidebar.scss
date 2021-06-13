@@ -7,3 +7,17 @@
 	@include flex(flex, column, center, center);
 	box-shadow: 0px 0px 10px map-get($colors, "sidebar-shadow-color");
 }
+
+
+
+
+
+/* ===== Sidebar-right====== */
+.l-sidebar-right {
+	padding-top: Rem(30);
+}
+
+.l-sidebar-right__wrapper {
+	@include flex(flex, column, center, center);
+}
+
