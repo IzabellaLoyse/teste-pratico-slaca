@@ -8,7 +8,6 @@ $colors: (
   "menu-text-color":  rgb(113, 91, 91),
   "header-title-color": rgb(114, 92, 92),
   "box-header-color":  rgb(253, 242, 237),
-  "active-menu-background": rgb(253, 241, 235),
   "card-text-color": rgb(77, 77, 77),
   "border-color":  rgb(237, 237, 237),
   "menu-border-color":  rgb(232, 232, 232),
@@ -20,6 +19,10 @@ $colors: (
   "select-border-color": rgb(204, 204, 204),
   "notification-color": rgb(248, 89, 89),
   "main-page-color":rgb(237, 120, 57),
+  "right-sidebar-title-color":  rgb(78, 78, 78),
+  "box-text-color":rgb(92, 92, 92),
+  "reference-color":rgb(173, 160, 160),
+  
 );
  
 
@@ -55,6 +58,7 @@ $font-weight:(
 =============================================================================*/
 
 $global-font-size: 93.75%; //15px
+$global-letter-spacing: 0.02em;
 $global-border-radius: Rem(4);
 
 

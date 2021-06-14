@@ -34,6 +34,8 @@ h3,
 h4,
 p,
 li,
+span,
+sup,
 input,
 select,
 textarea {
@@ -49,6 +51,15 @@ textarea {
 li {
 	list-style: none;
 }
+
+
+sup {
+	@include text-properties(Rem(12),Rem(10));
+	color: map-get($colors , "reference-color");
+	letter-spacing: $global-letter-spacing;
+	font-weight: map-get($font-weight , "quicksand-regular");
+}
+
 
 a {
 	color: map-get($colors , "menu-text-color");

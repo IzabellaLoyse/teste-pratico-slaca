@@ -80,7 +80,28 @@
 	color: map-get($colors, "color-page");
 }
 
+
 .c-sidebar-button__icon {
 	width: Rem(19);
 	height: Rem(19);
+	margin-top: Rem(3);
 }
+
+
+.c-sidebar-right__box {
+	padding-right: Rem(80);
+}
+
+
+.c-sidebar-right__title {
+	@include text-properties(Rem(25),Rem(14.8));
+	color: map-get($colors, "main-page-color");
+	font-weight: map-get($font-weight , "roboto-medium" );
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.05em;
+	min-width: 700px;
+	
+}
+
+
