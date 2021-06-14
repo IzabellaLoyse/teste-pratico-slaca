@@ -2,9 +2,14 @@
   *Sidebar
 =============================================================================*/
 
+.l-sidebar,
+.l-sidebar-right__wrapper {
+	@include flex(flex, column, center, center);
+}
+
+
 /* ===== Sidebar-left ====== */
 .l-sidebar {
-	@include flex(flex, column, center, center);
 	box-shadow: 0px 0px 10px map-get($colors, "sidebar-shadow-color");
 }
 
@@ -17,7 +22,5 @@
 	padding-top: Rem(30);
 }
 
-.l-sidebar-right__wrapper {
-	@include flex(flex, column, center, center);
-}
+
 

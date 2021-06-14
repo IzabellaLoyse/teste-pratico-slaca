@@ -59,6 +59,7 @@ $font-weight:(
 
 $global-font-size: 93.75%; //15px
 $global-letter-spacing: 0.02em;
+$second-letter-spacing: 0.05em;
 $global-border-radius: Rem(4);
 
 
@@ -80,4 +81,10 @@ $global-border-radius: Rem(4);
   @mixin text-properties($line-height,$font-size) {
     line-height: $line-height;
     font-size: $font-size;
+  }
+
+
+  @mixin text-shaping($text-align, $letter-spacing) {
+    text-align: $text-align;
+    letter-spacing: $letter-spacing
   }

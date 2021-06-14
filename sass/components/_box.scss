@@ -2,80 +2,85 @@
   *Components: Box
 =============================================================================*/
 
+.c-box,
+.c-box__header {
+	border: 1px solid map-get($colors, "border-color");
+}
+
+
 .c-box {
-  width: Rem(250);
-  height: Rem(455);
-  margin-top: Rem(18);
-  margin-right: Rem(120);
-  border: 2px solid map-get($colors, "border-color");
-  background-color: map-get($colors, "color-page");
+	width: Rem(250);
+	height: Rem(455);
+	margin-top: Rem(18);
+	margin-right: Rem(120);
+	background-color: map-get($colors, "color-page");
 }
 
 
 .c-box__header {
-  width: Rem(247);
-  height: Rem(45);
-  background-color: map-get($colors, "main-header-background");
-  border-bottom: 2px solid map-get($colors, "border-color");
-  border-radius: 3px 3px 0px 0px;
+	width: Rem(248);
+	height: Rem(45);
+	background-color: map-get($colors, "main-header-background");
+	border-radius: 3px 3px 0px 0px;
 }
 
 
 .c-box__title {
-  @include text-properties(Rem(25),Rem(20));
-  color: map-get($colors ,  "right-sidebar-title-color");
-  text-align: left;
-  font-weight: map-get($font-weight, "roboto-medium");
-  padding-top: Rem(10);
-  padding-left: Rem(8);
+	@include text-properties(Rem(25), Rem(20));
+	color: map-get($colors, "right-sidebar-title-color");
+	text-align: left;
+	font-weight: map-get($font-weight, "roboto-medium");
+	padding-top: Rem(10);
+	padding-left: Rem(8);
 }
 
 
 .c-box__wrapper {
-  overflow-y: scroll;
-  margin-left: Rem(12);
-  margin-top: Rem(12);
+	overflow-y: scroll;
+	margin-left: Rem(12);
+	margin-top: Rem(12);
+}
+
+
+.c-box__text,
+.c-box__second-title {
+	@include text-shaping(left, $global-letter-spacing);
+	color: map-get($colors, "box-text-color");
 }
 
 
 .c-box__text {
-  @include text-properties(Rem(14.4),Rem(14));
-  font-weight: map-get($font-weight , "quicksand-regular");
-  color: map-get($colors , "box-text-color");
-  letter-spacing: $global-letter-spacing;
-  margin-bottom: Rem(8);
-  text-align: left;
+	@include text-properties(Rem(14.4), Rem(14));
+	font-weight: map-get($font-weight, "quicksand-regular");
+	margin-bottom: Rem(8);
 }
 
-.c-box__span {
-  font-weight: map-get($font-weight , "quicksand-bold");
+
+.c-box__span,
+.c-box__second-title {
+	font-weight: map-get($font-weight, "quicksand-bold");
 }
 
 
 .c-box__second-title {
-  @include text-properties(Rem(17),Rem(16));
-  color: map-get($colors , "box-text-color");
-  font-weight: map-get($font-weight , "quicksand-bold");
-  margin-top: Rem(20);
-  margin-bottom: Rem(10);
-  text-align: left;
-  letter-spacing: $global-letter-spacing;
+	@include text-properties(Rem(17), Rem(16));
+	margin-top: Rem(20);
+	margin-bottom: Rem(10);
 }
 
 
 .c-box-author {
-  @include text-properties(Rem(17),Rem(15.5));
+	@include text-properties(Rem(17), Rem(15.5));
 
-  &:last-of-type {
-    margin-bottom: Rem(30);
-  }
+	&:last-of-type {
+		margin-bottom: Rem(30);
+	}
 }
 
 
 .c-box-reference__text {
-  @include text-properties(Rem(14),Rem(13));
-	color: map-get($colors , "reference-color");
-	letter-spacing: $global-letter-spacing;
-	font-weight: map-get($font-weight , "quicksand-regular");
-  text-align: left;
+	@include text-properties(Rem(14), Rem(13));
+	@include text-shaping(left, $global-letter-spacing);
+	color: map-get($colors, "reference-color");
+	font-weight: map-get($font-weight, "quicksand-regular");
 }

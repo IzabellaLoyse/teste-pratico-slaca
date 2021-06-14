@@ -2,6 +2,7 @@
   *Components: Sidebar-left
 =============================================================================*/
 
+
 .c-sidebar__box {
 	width: Rem(230);
 	background-image: linear-gradient(
@@ -11,7 +12,7 @@
 	);
 
 	.c-sidebar__title {
-		@include text-properties(Rem(35),Rem(32));
+		@include text-properties(Rem(35), Rem(32));
 		padding-top: Rem(6);
 		font-weight: map-get($font-weight, "roboto-bold");
 		color: map-get($colors, "color-page");
@@ -47,6 +48,7 @@
 	padding-right: Rem(100);
 }
 
+
 .c-sidebar-button {
 	background-color: map-get($colors, "main-page-color");
 	border: none;
@@ -56,27 +58,29 @@
 	&:nth-of-type(1) {
 		width: Rem(120);
 		height: Rem(31);
-		
 	}
 
 	&:nth-of-type(2) {
 		width: Rem(43);
 		height: Rem(31);
-		
 	}
 
 	&:nth-of-type(3) {
 		width: Rem(43);
 		height: Rem(31);
-		
 	}
-
 }
 
-.c-sidebar-button__link  {
+
+.c-sidebar-button__link,
+.c-sidebar-right__title {
+	font-weight: map-get($font-weight, "roboto-medium");
+}
+
+
+.c-sidebar-button__link {
 	@include flex(flex, row, space-around, center);
-	@include text-properties(Rem(19),Rem(16));
-	font-weight: map-get($font-weight , "roboto-medium" );
+	@include text-properties(Rem(19), Rem(16));
 	color: map-get($colors, "color-page");
 }
 
@@ -94,14 +98,9 @@
 
 
 .c-sidebar-right__title {
-	@include text-properties(Rem(25),Rem(14.8));
+	@include text-properties(Rem(25), Rem(14.8));
+	@include text-shaping(center, $second-letter-spacing);
 	color: map-get($colors, "main-page-color");
-	font-weight: map-get($font-weight , "roboto-medium" );
 	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.05em;
 	min-width: 700px;
-	
 }
-
-
