@@ -3,20 +3,15 @@
 =============================================================================*/
 
 .l-layout {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-
-	@include breakpoint(1000) {
 		display: grid;
 		grid-template-columns: 200px 1fr 200px;
 		grid-template-rows: auto 1fr auto;
 		grid-template-areas:
 			"sidebar-left header header"
-			"sidebar-left main sidebar-right"
+			"sidebar-left main main"
 			"sidebar-left footer footer";
 	}
-}
+
 
 
 .l-sidebar-left {
@@ -29,10 +24,6 @@
 
 .l-main {
 	grid-area: main;
-}
-
-.l-sidebar-right {
-	grid-area: sidebar-right;
 }
 
 .l-footer {

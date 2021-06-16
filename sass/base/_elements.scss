@@ -37,6 +37,7 @@ li,
 span,
 sup,
 input,
+button,
 select,
 textarea {
 	font-family: $second-font-family;
@@ -64,10 +65,12 @@ sup {
 a {
 	color: map-get($colors , "menu-text-color");
 	text-decoration: none;
+	cursor: pointer;
 }
 
 
 img,
+iframe,
 video {
 	max-width: 100%;
 }

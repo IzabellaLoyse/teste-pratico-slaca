@@ -23,7 +23,7 @@
 
 
 .c-sidebar__wrapper {
-	height: 150vh;
+	height: 200vh;
 }
 
 
@@ -42,7 +42,7 @@
 
 
 .c-sidebar-right__buttons {
-	padding-bottom: Rem(11);
+	margin-bottom: Rem(12);
 	display: flex;
 	flex-direction: row;
 	padding-right: Rem(100);
@@ -54,6 +54,11 @@
 	border: none;
 	border-radius: $global-border-radius;
 	margin-left: Rem(10);
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background-color: darken(map-get($colors, "main-page-color"),10%);
+	}
 
 	&:nth-of-type(1) {
 		width: Rem(120);
@@ -103,4 +108,6 @@
 	color: map-get($colors, "main-page-color");
 	text-transform: uppercase;
 	min-width: 700px;
+	padding-bottom: Rem(10);
+	padding-right: Rem(5);
 }

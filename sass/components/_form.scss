@@ -1,0 +1,42 @@
+
+
+.c-form-topic {
+  width: 100%;
+  margin-left: Rem(40);
+  margin-bottom: Rem(45);
+  
+}
+
+.c-form-topic__container {
+  padding-bottom: Rem(15);
+
+}
+
+.c-form-topic__label{
+  @include text-properties(Rem(19), Rem(16));
+  display: flex;
+  flex-direction: column;
+  color: map-get($colors , "main-page-color");
+  text-align: left;
+  font-weight: map-get($font-weight, "roboto-bold");
+}
+
+
+.c-form-topic__field {
+  width: Rem(1010);
+  height: Rem(39);
+  max-width: 100%;
+  padding-left: Rem(12);
+  border: 1px solid map-get($colors, "select-border-color");
+}
+
+.c-form-topic__textarea {
+  height: Rem(113);
+}
+
+
+.c-form-topic__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
