@@ -27,6 +27,10 @@ body {
 	background-color: map-get($colors, "color-page");
 	font-family: $global-font-family;
 	font-size: $global-font-size;
+
+	@include breakpoint(1344) {
+		font-size: 87.5%;
+	}
 }
 
 

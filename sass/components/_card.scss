@@ -1,0 +1,76 @@
+
+
+.c-card {
+  height: auto;
+  width: Rem(1028);
+  background-color: map-get($colors, "color-page");
+  margin-top: Rem(30);
+  margin-left: Rem(15);
+  padding-top: Rem(20);
+  padding-left: Rem(30);
+  border-radius: $global-border-radius;
+  box-shadow: 0px 0px 8px map-get($colors,	"box-shadow-color");
+  border: 1px solid map-get($colors, "card-border");
+}
+
+
+.c-card__header {
+  padding-bottom: Rem(15);
+}
+
+
+.c-card__title {
+  @include text-properties(Rem(20), Rem(16));
+  font-weight: map-get($font-weight, "quicksand-bold");
+  color: map-get($colors , "main-page-color" );
+  text-align: left;
+}
+
+.c-card__caption {
+  @include text-properties(Rem(15), Rem(12));
+  font-weight: map-get($font-weight, "quicksand-medium");
+  color: map-get($colors, "box-text-color");
+}
+
+.c-card__paragraph {
+  @include text-properties(Rem(17), Rem(14));
+  font-weight: map-get($font-weight, "quicksand-regular");
+  color: map-get($colors , "card-text-color");
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: Rem(10);
+
+}
+
+.c-card__footer {
+  padding-bottom: Rem(10);
+}
+
+.c-card__items{
+  display: flex;
+  flex-direction: row;
+}
+
+.c-card__item {
+  @include text-properties(Rem(19), Rem(14));
+  font-weight: map-get($font-weight, "quicksand-regular");
+  color: map-get($colors, "small-text-card");
+  transform: translate(-2px);
+  padding-left: Rem(8);
+
+  &:nth-of-type(2) {
+    padding-left: Rem(10);
+   transform: translateY(-2px);
+  }
+
+  &:nth-of-type(3) {
+    padding-left: Rem(20);
+   padding-top: Rem(2);
+  }
+
+  &:nth-of-type(4) {
+    padding-left: Rem(20);
+   padding-top: Rem(2);
+  }
+}

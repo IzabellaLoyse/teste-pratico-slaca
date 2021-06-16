@@ -10,12 +10,21 @@
 			"sidebar-left header header"
 			"sidebar-left main main"
 			"sidebar-left footer footer";
+
+			@include breakpoint(1344) {
+				@include flex(flex, column, center, center);
+				height: 100vh;
+			}
 	}
 
 
 
 .l-sidebar-left {
 	grid-area: sidebar-left;
+
+	@include breakpoint(1344) {
+		margin-top: Rem(730);
+	}
 }
 
 .l-header {

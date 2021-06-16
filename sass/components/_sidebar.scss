@@ -11,6 +11,11 @@
 		map-get($colors, "second-gradient-color") 100%
 	);
 
+	@include breakpoint(1344) {
+		width: Rem(120);
+	}
+	
+
 	.c-sidebar__title {
 		@include text-properties(Rem(35), Rem(32));
 		padding-top: Rem(6);
@@ -23,13 +28,23 @@
 
 
 .c-sidebar__wrapper {
-	height: 200vh;
+	height: 280vh;
+
+	@include breakpoint(1344) {
+	height: 100%;
+	
+	
+	}
 }
 
 
 .c-sidebar__logo {
 	width: Rem(210);
 	height: Rem(260);
+	@include breakpoint(1344) {
+		width: Rem(100);
+		height: Rem(100);
+	}
 }
 
 
