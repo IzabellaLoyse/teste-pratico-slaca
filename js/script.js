@@ -21,6 +21,8 @@ itemMenu.forEach((item) => {
 
 
 
+/* === Remove the hidden content that is in the paragraph by clicking on see more. === */
+
 const showMore = () => {
 	const paragraphs = document.querySelectorAll(
 		".is-main-box__text--visibility"
@@ -40,6 +42,8 @@ readMore.addEventListener("click", () => {
 
 
 
+
+/* === Add the section containing the form === */
 const formVisibility = () => {
 	const removeFormVisibility = document.querySelector(".js-form-box");
 	const createTopic = document.querySelector(".js-discussion-box");
