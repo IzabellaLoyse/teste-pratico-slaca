@@ -5,6 +5,7 @@
 
 .c-sidebar__box {
 	width: Rem(230);
+	max-width: 100%;
 	background-image: linear-gradient(
 		180deg,
 		map-get($colors, "first-gradient-color") 0%,
@@ -12,7 +13,7 @@
 	);
 
 	@include breakpoint(1344) {
-		width: Rem(120);
+		visibility: hidden;
 	}
 	
 
@@ -32,7 +33,11 @@
 
 	@include breakpoint(1344) {
 	height: 100%;
-	
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+	padding-left: Rem(50);
 	
 	}
 }
@@ -42,12 +47,12 @@
 	width: Rem(210);
 	height: Rem(260);
 	@include breakpoint(1344) {
-		width: Rem(100);
-		height: Rem(100);
-	}
+	width: Rem(80);
+	height: Rem(100);
+	
 }
 
-
+}
 
 
 
@@ -61,6 +66,9 @@
 	display: flex;
 	flex-direction: row;
 	padding-right: Rem(100);
+
+	
+
 }
 
 
@@ -88,6 +96,10 @@
 	&:nth-of-type(3) {
 		width: Rem(43);
 		height: Rem(31);
+	}
+
+	@include breakpoint(1344) {
+		padding-left: Rem(10);
 	}
 }
 

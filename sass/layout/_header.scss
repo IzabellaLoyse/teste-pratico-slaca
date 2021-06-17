@@ -6,6 +6,11 @@
   width: 100%;
   height: Rem(84);
   background-color: map-get($colors, "main-header-background" );
+  display: flex;
+  flex-wrap: wrap;
+  @include breakpoint(1344) {
+    height: auto;
+  }
   
 }
 

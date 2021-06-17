@@ -12,10 +12,9 @@
 .l-sidebar {
 	box-shadow: 0px 0px 10px map-get($colors, "sidebar-shadow-color");
 	@include breakpoint(1344) {
-		margin-bottom: Rem(85);
-		width: 100%;
 		@include flex(flex, row,center, center);
-
+		width: 100%;
+		
 	}
 }
 
@@ -27,8 +26,17 @@
  .l-sidebar-right {
 	padding-top: Rem(28);
 	width: Rem(200);
+
+	@include breakpoint(1344) {
+		margin: auto;
+	}
 }
  
-
+.l-sidebar__wrapper {
+	@include breakpoint(1344) {
+	
+		width: 100%;
+  }
+}
 
 
