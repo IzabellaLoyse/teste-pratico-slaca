@@ -3,65 +3,49 @@
 =============================================================================*/
 
 .c-main__box {
-  padding-top: Rem(15);
+	padding-top: Rem(15);
 
-  
-  
-
- 
-  @include breakpoint(1340) {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    margin: 0 auto;
-  }
-  
+	@include breakpoint(1340) {
+    @include flex(flex, column, center, center);
+		margin: 0 auto;
+	}
 }
 
 
 .c-main__text {
-  @include text-properties(Rem(25),Rem(20));
-  @include text-shaping(left, $second-letter-spacing);
-  color: map-get($colors , "main-page-color" );
-  font-weight: map-get($font-weight, "roboto-black");
-  max-width: 800px;
+	@include text-properties(Rem(25), Rem(20));
+	@include text-shaping(left, $second-letter-spacing);
+	color: map-get($colors, "main-page-color");
+	font-weight: map-get($font-weight, "roboto-black");
+	max-width: 800px;
 
-  @include breakpoint(1344){
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
+	@include breakpoint(1344) {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+	}
 
-  @include breakpoint(1340) {
-    max-width: 1000px;
-    
-  }
+	@include breakpoint(1340) {
+		max-width: 1000px;
+	}
 }
 
 
-
 .c-main__video {
-  padding-top: Rem(20);
-  max-width: 100%;
+	padding-top: Rem(20);
+	max-width: 100%;
 
-  @include breakpoint(1344) {
-    height: auto;
-    width: auto;
-  
-  }
+	@include breakpoint(1344) {
+		height: auto;
+		width: auto;
+	}
 
-  @include breakpoint(1340) {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    
-  }
+	@include breakpoint(1340) {
+		@include flex(flex, column, center, center);
+	}
 
-  @include breakpoint(850) {
-    margin: auto;
-   width: Rem(600);
-  }
-
-
-
+	@include breakpoint(850) {
+		margin: auto;
+		width: Rem(600);
+	}
 }

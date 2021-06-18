@@ -1,79 +1,85 @@
-
+/* ============================================================================ 
+  *Components: Form
+=============================================================================*/
 
 .c-form-topic {
-  width: 100%;
-  margin-left: Rem(40);
-  margin-bottom: Rem(45);
-  
+	width: 100%;
+	margin-left: Rem(40);
+	margin-bottom: Rem(45);
 }
+
 
 .c-form-topic__container {
-  padding-bottom: Rem(15);
-
+	padding-bottom: Rem(15);
 }
 
-.c-form-topic__label{
-  @include text-properties(Rem(19), Rem(16));
-  display: flex;
-  flex-direction: column;
-  color: map-get($colors , "main-page-color");
-  text-align: left;
-  font-weight: map-get($font-weight, "roboto-bold");
+
+.c-form-topic__label {
+	@include text-properties(Rem(19), Rem(16));
+	display: flex;
+	flex-direction: column;
+	color: map-get($colors, "main-page-color");
+	text-align: left;
+	font-weight: map-get($font-weight, "roboto-bold");
 }
 
 
 .c-form-topic__field {
-  width: Rem(1010);
-  height: Rem(40);
-  max-width: 100%;
-  padding-left: Rem(12);
-  border: 1px solid map-get($colors, "select-border-color");
+	width: Rem(1010);
+	height: Rem(40);
+	max-width: 100%;
+	padding-left: Rem(12);
 }
 
+
 .c-form-topic__textarea {
-  height: Rem(113);
+	height: Rem(113);
 }
 
 
 .c-form-topic__footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+	@include flex(flex, row, space-between, center);
 }
 
+
 .c-form-topic__elements {
-  height: Rem(31);
-  width: Rem(808);
-  display: flex;
-  align-items: center;
-  background-color: map-get($colors, "textarea-footer-color");
-  border: 1px solid map-get($colors, "select-border-color");
-  border-radius: 0px 0px $global-border-radius $global-border-radius;
-  padding-left: Rem(10);
+	height: Rem(31);
+	width: Rem(808);
+	display: flex;
+	align-items: center;
+	background-color: map-get($colors, "textarea-footer-color");
+	border-radius: 0px 0px $global-border-radius $global-border-radius;
+	padding-left: Rem(10);
 }
 
 
 .c-form-topic__span {
-  @include text-properties(Rem(19), Rem(17));
-  color: map-get($colors, "shape-color");
-  padding-left: Rem(10);
+	@include text-properties(Rem(19), Rem(17));
+	color: map-get($colors, "shape-color");
+	padding-left: Rem(10);
 }
 
+
 .c-form-topic__button {
-  @include text-properties(Rem(16), Rem(15));
-  height: Rem(31);
-  width: Rem(205.1);
-  text-align: center;
-  font-weight: map-get($font-weight, "quicksand-bold");
-  color: map-get($colors, "color-page");
-  background-image: linear-gradient(
+	@include text-properties(Rem(16), Rem(15));
+	height: Rem(31);
+	width: Rem(205.1);
+	text-align: center;
+	font-weight: map-get($font-weight, "quicksand-bold");
+	color: map-get($colors, "color-page");
+	background-image: linear-gradient(
 		180deg,
 		map-get($colors, "first-gradient-color") 0%,
 		map-get($colors, "second-gradient-color") 100%
 	);
-  margin-right: Rem(52);
-  border: none;
-  border-radius: 0px 0px $global-border-radius 0px;
-  cursor: pointer;
+	margin-right: Rem(52);
+	border: none;
+	border-radius: 0px 0px $global-border-radius 0px;
+	cursor: pointer;
+}
+
+
+.c-form-topic__field,
+.c-form-topic__elements {
+	border: 1px solid map-get($colors, "select-border-color");
 }

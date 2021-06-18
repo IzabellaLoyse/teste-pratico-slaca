@@ -2,7 +2,6 @@
   *Components: Sidebar-left
 =============================================================================*/
 
-
 .c-sidebar__box {
 	width: Rem(230);
 	max-width: 100%;
@@ -15,7 +14,7 @@
 	@include breakpoint(1344) {
 		visibility: hidden;
 	}
-	
+
 
 	.c-sidebar__title {
 		@include text-properties(Rem(35), Rem(32));
@@ -29,16 +28,13 @@
 
 
 .c-sidebar__wrapper {
-	height: 280vh;
+	height: 300vh;
 
 	@include breakpoint(1344) {
-	height: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
-	flex-wrap: wrap;
-	padding-left: Rem(50);
-	
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: Rem(50);
 	}
 }
 
@@ -46,13 +42,14 @@
 .c-sidebar__logo {
 	width: Rem(210);
 	height: Rem(260);
+
 	@include breakpoint(1344) {
-	width: Rem(80);
-	height: Rem(100);
-	
+		width: Rem(80);
+		height: Rem(100);
+	}
 }
 
-}
+
 
 
 
@@ -60,15 +57,11 @@
   *Components: Sidebar-right
 =============================================================================*/
 
-
 .c-sidebar-right__buttons {
 	margin-bottom: Rem(12);
 	display: flex;
 	flex-direction: row;
 	padding-right: Rem(100);
-
-	
-
 }
 
 
@@ -79,8 +72,12 @@
 	margin-left: Rem(10);
 	transition: all 0.3s ease-in-out;
 
+	@include breakpoint(1344) {
+		padding-left: Rem(10);
+	}
+
 	&:hover {
-		background-color: darken(map-get($colors, "main-page-color"),10%);
+		background-color: darken(map-get($colors, "main-page-color"), 10%);
 	}
 
 	&:nth-of-type(1) {
@@ -97,17 +94,8 @@
 		width: Rem(43);
 		height: Rem(31);
 	}
-
-	@include breakpoint(1344) {
-		padding-left: Rem(10);
-	}
 }
 
-
-.c-sidebar-button__link,
-.c-sidebar-right__title {
-	font-weight: map-get($font-weight, "roboto-medium");
-}
 
 
 .c-sidebar-button__link {
@@ -137,4 +125,10 @@
 	min-width: 700px;
 	padding-bottom: Rem(10);
 	padding-right: Rem(5);
+}
+
+
+.c-sidebar-button__link,
+.c-sidebar-right__title {
+	font-weight: map-get($font-weight, "roboto-medium");
 }

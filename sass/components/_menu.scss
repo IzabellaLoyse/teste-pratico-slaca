@@ -2,23 +2,20 @@
   *Components: Menu
 =============================================================================*/
 
-
 .c-menu {
 	padding-top: Rem(10);
-
 }
+
 
 .c-menu__group {
 	@include breakpoint(1344) {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+		@include flex(flex, row, space-between, center);
 	}
 }
 
+
 .c-menu__item {
-	@include text-properties(Rem(19),Rem(17));
+	@include text-properties(Rem(19), Rem(17));
 	font-weight: map-get($font-weight, "quicksand-medium");
 	padding: Rem(10);
 	border-bottom: 2px solid map-get($colors, "menu-border-color");
@@ -27,7 +24,4 @@
 		border: none;
 	}
 }
-
-
-
 

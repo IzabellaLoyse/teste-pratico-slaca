@@ -1,23 +1,19 @@
 /* ============================================================================ 
-  *Main
+  *Layout: Main
 =============================================================================*/
-
 
 .l-main,
 .l-footer {
-  margin-left: Rem(26); 
-  
+	margin-left: Rem(26);
 }
 
 
+.l-wrapper {
+	display: flex;
+	justify-content: space-between;
 
-.l-wrapper{
-  display: flex;
-  justify-content: space-between;
-
-  @include breakpoint(1344) {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
- 
+	@include breakpoint(1344) {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
 }

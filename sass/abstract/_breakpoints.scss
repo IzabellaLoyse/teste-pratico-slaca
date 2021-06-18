@@ -1,5 +1,10 @@
 // https://desenvolvimentoparaweb.com/css/css-breakpoints-maneira-correta/
 
+
+/* ============================================================================ 
+  *Abstract: breakpoints
+=============================================================================*/
+
 @mixin breakpoint($point) {
   @if $point == small-only {
     @media (max-width: 37.4375em) { // 599px
