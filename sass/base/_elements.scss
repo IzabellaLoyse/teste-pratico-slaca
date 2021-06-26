@@ -67,7 +67,7 @@ sup {
 
 
 a {
-	color: map-get($colors , "menu-text-color");
+	color: map-get($colors , "header-title-color");
 	text-decoration: none;
 	cursor: pointer;
 }

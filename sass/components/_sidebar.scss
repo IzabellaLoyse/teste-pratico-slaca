@@ -12,7 +12,7 @@
 	);
 
 	@include breakpoint(1344) {
-		visibility: hidden;
+		width: 100%;
 	}
 
 
@@ -32,9 +32,11 @@
 
 	@include breakpoint(1344) {
 		height: 100%;
+		width: 100%;
 		display: flex;
-		flex-wrap: wrap;
-		padding-left: Rem(50);
+		align-items: center;
+		justify-content: center;
+		padding-left: Rem(32);
 	}
 }
 
@@ -44,8 +46,7 @@
 	height: Rem(260);
 
 	@include breakpoint(1344) {
-		width: Rem(80);
-		height: Rem(100);
+		display: none;
 	}
 }
 

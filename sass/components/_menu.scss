@@ -4,6 +4,11 @@
 
 .c-menu {
 	padding-top: Rem(10);
+
+	@include breakpoint(1344) {
+		padding-top: Rem(16);
+		padding-bottom: Rem(32);
+	}
 }
 
 
@@ -15,13 +20,14 @@
 
 
 .c-menu__item {
-	@include text-properties(Rem(19), Rem(17));
+	@include text-properties(Rem(18.75), Rem(15));
 	font-weight: map-get($font-weight, "quicksand-medium");
-	padding: Rem(10);
+	padding: Rem(24);
 	border-bottom: 2px solid map-get($colors, "menu-border-color");
 
 	@include breakpoint(1344) {
 		border: none;
+		padding:Rem(14);
 	}
 }
 

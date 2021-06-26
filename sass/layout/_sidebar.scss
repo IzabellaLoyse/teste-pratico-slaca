@@ -10,11 +10,14 @@
 
 
 /* ===== Sidebar-left ====== */
+
+
+
 .l-sidebar {
 	box-shadow: 0px 0px 10px map-get($colors, "sidebar-shadow-color");
 	
 	@include breakpoint(1344) {
-		@include flex(flex, row, center, center);
+		@include flex(flex, column, center, center);
 		width: 100%;
 	}
 }
