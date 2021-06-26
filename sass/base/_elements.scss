@@ -28,8 +28,9 @@ body {
 	font-family: $global-font-family;
 	font-size: $global-font-size;
 
+
 	@include breakpoint(1344) {
-		font-size: 87.5%;
+		font-size: 81.25%;
 	}
 }
 

@@ -7,6 +7,12 @@
 	font-weight: map-get($font-weight, "roboto-regular");
 	text-align: left;
 
+	@include breakpoint(1216) {
+		max-width: 850px;
+		text-align: center;
+		padding-top: Rem(8);
+	}
+
 	&:nth-of-type(1) {
 		@include text-properties(Rem(16), Rem(14));
 		padding-bottom: Rem(4);
@@ -28,6 +34,11 @@
 	margin-left: Rem(50);
 	position: relative;
 
+	@include breakpoint(1216) {
+		margin: 0 auto;
+		padding-top: Rem(16);
+	}
+
 	&::before {
 		content: "";
 		background: no-repeat url(/img/icon/icone-linguagem.png);
@@ -36,6 +47,10 @@
 		right: 74px;
 		height: Rem(40);
 		width: Rem(20);
+
+		@include breakpoint(1216) {
+			top: 20px;
+		}
 	}
 }
 
@@ -50,16 +65,33 @@
 }
 
 
-.c-header-contact {
-	padding-bottom: Rem(21);
-	position: relative;
+.c-header-container {
+	display: flex;
+	justify-content: space-between;
+	padding-top: Rem(10);
+
+
+	@include breakpoint(1216) {
+		padding-right: Rem(32);
+	}
 }
 
+
+.c-header-contact {
+	padding-bottom: Rem(20);
+	padding-left: Rem(16);
+	position: relative;
+}
+	
 
 .c-header-contact__text {
 	text-align: right;
 	color: map-get($colors, "contact-text-color");
 	padding-left: Rem(60);
+
+	@include breakpoint(1344) {
+		padding-left: Rem(85);
+	}
 
 	&:nth-of-type(1) {
 		@include text-properties(Rem(17), Rem(14));
@@ -76,13 +108,22 @@
 	width: Rem(40);
 	margin-right: Rem(20);
 	cursor: pointer;
+
+	
+
+	@include breakpoint(1344) {
+		margin-right: Rem(80);
+	}
+
+	
 }
 
 
 .c-header-contact__notification {
 	position: absolute;
-	top: 0;
+	top: 12px;
 	right: 17px;
+	border: none;
 	background-color: map-get($colors, "notification-color");
 	color: map-get($colors, "color-page");
 	font-weight: map-get($font-weight, "roboto-bold");
@@ -93,4 +134,8 @@
 	border-radius: Rem(10);
 	padding-top: Rem(2);
 	cursor: pointer;
+
+	
 }
+
+

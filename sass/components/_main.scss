@@ -5,9 +5,11 @@
 .c-main__box {
 	padding-top: Rem(15);
 
-	@include breakpoint(1340) {
-    @include flex(flex, column, center, center);
-		margin: 0 auto;
+
+	@include breakpoint(1344) {
+    @include flex(flex, column, center, center); 
+		width: 100%;
+
 	}
 }
 
@@ -19,15 +21,13 @@
 	font-weight: map-get($font-weight, "roboto-black");
 	max-width: 800px;
 
+	
+
 	@include breakpoint(1344) {
-		display: flex;
-		flex-wrap: wrap;
 		text-align: center;
+	
 	}
 
-	@include breakpoint(1340) {
-		max-width: 1000px;
-	}
 }
 
 
@@ -36,13 +36,12 @@
 	max-width: 100%;
 
 	@include breakpoint(1344) {
+	@include flex(flex, column, center, center);
 		height: auto;
 		width: auto;
 	}
 
-	@include breakpoint(1340) {
-		@include flex(flex, column, center, center);
-	}
+
 
 	@include breakpoint(850) {
 		margin: auto;
