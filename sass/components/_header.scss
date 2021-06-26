@@ -30,20 +30,20 @@
 
 
 .c-header__language {
-	padding-bottom: Rem(12);
+	padding-top: Rem(8);
 	margin-left: Rem(50);
 	position: relative;
 
 	@include breakpoint(1216) {
-		margin: 0 auto;
-		padding-top: Rem(16);
+		padding-top: Rem(16);	
+		padding-left: Rem(34.5);
 	}
 
 	&::before {
 		content: "";
 		background: no-repeat url(/img/icon/icone-linguagem.png);
 		position: absolute;
-		top: 6px;
+		top: 13.5px;
 		right: 74px;
 		height: Rem(40);
 		width: Rem(20);
@@ -69,11 +69,18 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: Rem(10);
-
+	
 
 	@include breakpoint(1216) {
-		padding-right: Rem(32);
+		padding-right: Rem(76);
+
 	}
+}
+
+.c-header-group {
+	display: flex;
+	justify-content: space-evenly;
+
 }
 
 
@@ -81,6 +88,7 @@
 	padding-bottom: Rem(20);
 	padding-left: Rem(16);
 	position: relative;
+
 }
 	
 
@@ -121,7 +129,7 @@
 
 .c-header-contact__notification {
 	position: absolute;
-	top: 12px;
+	top: 4px;
 	right: 17px;
 	border: none;
 	background-color: map-get($colors, "notification-color");
