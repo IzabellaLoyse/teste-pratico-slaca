@@ -6,13 +6,14 @@
 /* === Box about details=== */
 .c-box {
 	width: Rem(250);
-	height: Rem(470);
-	max-height: 100%;
+	height: Rem(476);
 	margin-top: Rem(5);
-	margin-right: Rem(170);
+	margin-right: Rem(156);
+	
+	
 
 	@include breakpoint(1344) {
-		width: 78vw;
+		
 		height: auto;
 		margin-top: Rem(30);
 		padding-bottom: Rem(30);
@@ -69,12 +70,12 @@
 
 /* === Summary and discussions box  === */
 .c-main-box {
-	width: 78vw;
+	width: 98%;
 	height: auto;
 	margin-top: Rem(30);
-	padding-bottom: Rem(30);
 	display: flex;
 	flex-wrap: wrap;
+	
 }
 
 
@@ -84,7 +85,7 @@
 
 
 .c-main-box__wrapper {
-	padding: Rem(16);
+	padding: Rem(16) Rem(16) Rem(4);
 }
 
 
@@ -187,6 +188,7 @@
 .c-box__header,
 .c-main-box {
 	border: 1px solid map-get($colors, "border-color");
+	border-radius: 3px;
 }
 
 

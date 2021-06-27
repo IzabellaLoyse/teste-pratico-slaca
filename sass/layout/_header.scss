@@ -3,29 +3,29 @@
 =============================================================================*/
 
 .l-header {
-	height: Rem(84);
+	width: 100%;
+	height: auto;
 	background-color: map-get($colors, "main-header-background");
-	display: flex;
-	flex-wrap: wrap;
+	
 
 	
 	@include breakpoint(1344) {
 		height: auto;
+		
 	}
 }
 
 
 .l-header__container {
+	margin-top: Rem(8);
+	margin-left: Rem(28);
 	width: 100%;
-	margin-top: Rem(10);
-	margin-left: Rem(30);
-
-	
 }
 
 
 .l-header__wrapper {
 	@include flex(flex, row, space-between, center);
+		width: 100%;
 
 	@include breakpoint(1216) {
 		flex-direction: column;

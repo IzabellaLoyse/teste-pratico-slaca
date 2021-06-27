@@ -6,24 +6,24 @@
 	color: map-get($colors, "header-title-color");
 	font-weight: map-get($font-weight, "roboto-regular");
 	text-align: left;
-
+	
 	@include breakpoint(1216) {
-		max-width: 850px;
+		max-width: clamp(25ch , 90%, 75ch);
 		text-align: center;
 		padding-top: Rem(8);
 	}
 
 	&:nth-of-type(1) {
-		@include text-properties(Rem(16), Rem(14));
-		padding-bottom: Rem(4);
+		@include text-properties(Rem(16.41), Rem(14));
+		padding-bottom: Rem(5);
 	}
 
 	&:nth-of-type(2) {
-		@include text-properties(Rem(26), Rem(22));
+		@include text-properties(Rem(25.78), Rem(22));
 	}
 
 	&:nth-of-type(3) {
-		@include text-properties(Rem(16), Rem(14));
+		@include text-properties(Rem(16.41), Rem(14));
 		font-family: $global-font-family;
 	}
 }
@@ -31,7 +31,6 @@
 
 .c-header__language {
 	padding-top: Rem(8);
-	margin-left: Rem(50);
 	position: relative;
 
 	@include breakpoint(1216) {
@@ -69,7 +68,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: Rem(10);
-	
+	padding-right: Rem(16);
 
 	@include breakpoint(1216) {
 		padding-right: Rem(76);
@@ -86,11 +85,17 @@
 
 .c-header-contact {
 	padding-bottom: Rem(20);
-	padding-left: Rem(16);
-	position: relative;
+	margin-right: Rem(16);
+
 
 }
 	
+.c-header-contact__box {
+	margin-right: Rem(16);
+	position: relative;
+
+}
+
 
 .c-header-contact__text {
 	text-align: right;
@@ -111,12 +116,15 @@
 }
 
 
+
+
+
 .c-header-contact__image {
 	border-radius: 50%;
 	width: Rem(40);
 	margin-right: Rem(20);
+	transform: translateY(-0.3rem);
 	cursor: pointer;
-
 	
 
 	@include breakpoint(1344) {
@@ -129,7 +137,7 @@
 
 .c-header-contact__notification {
 	position: absolute;
-	top: 4px;
+	top: 16px;
 	right: 17px;
 	border: none;
 	background-color: map-get($colors, "notification-color");
@@ -143,6 +151,9 @@
 	padding-top: Rem(2);
 	cursor: pointer;
 
+	@include breakpoint(1344) {
+		top: 16px;
+	}
 	
 }
 

@@ -37,14 +37,13 @@
 
 	@include breakpoint(1344) {
 	@include flex(flex, column, center, center);
-		height: auto;
-		width: auto;
+	
 	}
 
 
 
-	@include breakpoint(850) {
+	@include breakpoint(800) {
 		margin: auto;
-		width: Rem(600);
+		max-width: Rem(562.5);
 	}
 }

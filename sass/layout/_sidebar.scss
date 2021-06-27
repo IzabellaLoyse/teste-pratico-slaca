@@ -8,39 +8,23 @@
 }
 
 
-
-/* ===== Sidebar-left ====== */
-
+.l-sidebar-left {
+	flex-basis: 10%;
+	height: auto;
+}
 
 
 .l-sidebar {
-	box-shadow: 0px 0px 10px map-get($colors, "sidebar-shadow-color");
-	
-	@include breakpoint(1344) {
-		@include flex(flex, column, center, center);
-		width: 100%;
-	}
+  max-width: 100%;
+  box-shadow: 0px 0px 10px map-get($colors, "sidebar-shadow-color");
 }
 
-
-.l-sidebar__wrapper {
-	@include breakpoint(1344) {
-		width: 100%;
-	}
-}
-
-
-
-
-
-/* ===== Sidebar-right====== */
 .l-sidebar-right {
-	padding-top: Rem(28);
-	width: Rem(200);
-
-	@include breakpoint(1344) {
-		margin: auto;
-	}
+  width: 15%;
+  height: auto;
 }
 
-
+.l-sidebar-right__wrapper {
+  padding-left: Rem(18);
+  padding-top: Rem(28.5);
+}

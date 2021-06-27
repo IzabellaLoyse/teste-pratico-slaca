@@ -3,8 +3,8 @@
 =============================================================================*/
 
 .c-sidebar__box {
-	width: Rem(230);
-	max-width: 100%;
+	width: Rem(220);
+	height: Rem(77);
 	background-image: linear-gradient(
 		180deg,
 		map-get($colors, "first-gradient-color") 0%,
@@ -17,8 +17,8 @@
 
 
 	.c-sidebar__title {
-		@include text-properties(Rem(35), Rem(32));
-		padding-top: Rem(6);
+		@include text-properties(Rem(35.16), Rem(30));
+		padding-bottom: Rem(16);
 		font-weight: map-get($font-weight, "roboto-bold");
 		color: map-get($colors, "color-page");
 		text-align: center;
@@ -28,7 +28,7 @@
 
 
 .c-sidebar__wrapper {
-	height: 300vh;
+	height: 100%;
 
 	@include breakpoint(1344) {
 		height: 100%;
@@ -59,10 +59,10 @@
 =============================================================================*/
 
 .c-sidebar-right__buttons {
-	margin-bottom: Rem(12);
+	margin-bottom: Rem(8);
 	display: flex;
 	flex-direction: row;
-	padding-right: Rem(100);
+	padding-right: Rem(122);
 }
 
 
@@ -70,8 +70,9 @@
 	background-color: map-get($colors, "main-page-color");
 	border: none;
 	border-radius: $global-border-radius;
-	margin-left: Rem(10);
+	margin-left: Rem(4);
 	transition: all 0.3s ease-in-out;
+	
 
 	@include breakpoint(1344) {
 		padding-left: Rem(10);
@@ -84,6 +85,8 @@
 	&:nth-of-type(1) {
 		width: Rem(120);
 		height: Rem(31);
+		padding-left: Rem(16);
+		padding-right: Rem(16);
 	}
 
 	&:nth-of-type(2) {
@@ -103,6 +106,14 @@
 	@include flex(flex, row, space-around, center);
 	@include text-properties(Rem(19), Rem(16));
 	color: map-get($colors, "color-page");
+
+	& > .c-sidebar-button__icon {
+		margin-right: Rem(10);
+
+		&:nth-of-type(1) {
+			margin-bottom: Rem(6);
+		}
+	}
 }
 
 
@@ -110,6 +121,7 @@
 	width: Rem(19);
 	height: Rem(19);
 	margin-top: Rem(3);
+
 }
 
 
@@ -119,13 +131,13 @@
 
 
 .c-sidebar-right__title {
-	@include text-properties(Rem(25), Rem(14.8));
+	@include text-properties(Rem(25), Rem(14));
 	@include text-shaping(center, $second-letter-spacing);
 	color: map-get($colors, "main-page-color");
 	text-transform: uppercase;
 	min-width: 700px;
 	padding-bottom: Rem(10);
-	padding-right: Rem(5);
+	margin-right: Rem(40);
 }
 
 

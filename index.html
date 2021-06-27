@@ -22,14 +22,14 @@
 
 	<body>
 		<section class="l-layout">
-			<aside class="l-sidebar-left" aria-label="Menu de navegação da página">
 
-				<section class="l-sidebar">
+      <aside class="l-sidebar-left " aria-label="Menu de navegação da página">
+
+				<section class="l-sidebar l-layout-fluid">
 
 					<div class="c-sidebar__box">
 						<h1 class="c-sidebar__title">Slaca 2019</h1>
 					</div>
-
 
 					<div class="c-sidebar__wrapper">
 						<img
@@ -73,63 +73,66 @@
 							</ul>
 						</nav>
 					</div>
+		
+
 				</section>
-			</aside>
+				</aside>
 
 
+			
+		<section class="l-container">
+		<header class="l-header">
+			<section class="l-header__container">
+				<section class="l-header__wrapper">
+
+					<div class="c-header__box">
+						<h2 class="c-header__title">
+							Anais do Simpósio Latino Americano de Ciências de Alimentos
+						</h2>
+
+						<h2 class="c-header__title">
+							Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
+						</h2>
+
+						<h3 class="c-header__title">ISSN: 1234-5678</h3>
+					</div>
 
 
+					<div class="c-header-group">
+					<div class="c-header__language">
 
-			<header class="l-header">
+						<select class="c-header__select" autofocus name="language">
+							<option class="c-header__option" value="brasil">PT, BR</option>
+							<option value="portugal">PT, PT</option>
+							<option value="english">EN</option>
+						</select>
+					</div>
 
-				<section class="l-header__container">
-					<section class="l-header__wrapper">
+					<section class="c-header-container">
 
-						<div class="c-header__box">
-							<h2 class="c-header__title">
-								Anais do Simpósio Latino Americano de Ciências de Alimentos
-							</h2>
-
-							<h2 class="c-header__title">
-								Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
-							</h2>
-
-							<h3 class="c-header__title">ISSN: 1234-5678</h3>
-						</div>
-
-
-						<div class="c-header-group">
-						<div class="c-header__language">
-
-							<select class="c-header__select" autofocus name="language">
-								<option class="c-header__option" value="brasil">PT, BR</option>
-								<option value="portugal">PT, PT</option>
-								<option value="english">EN</option>
-							</select>
-						</div>
-
-						<section class="c-header-container">
-
-						<div class="c-header-contact">
-							<p class="c-header-contact__text">Bem vindo!</p>
-							<p class="c-header-contact__text">alguem12@galoascience.com</p>
-						</div>
+					<div class="c-header-contact">
+						<p class="c-header-contact__text">Bem vindo!</p>
+						<p class="c-header-contact__text">alguem12@galoascience.com</p>
+					</div>
 
 
-						<div class="c-header-contact">
-							
-							<img
-								src="img/imagem-perfil.png"
-								alt="Foto de perfil do usuário"
-								class="c-header-contact__image"
-								/>
-							<button class="c-header-contact__notification">2</button>
+					<div class="c-header-contact__box">
 						
-						</div>
-					</section>
-				</div>
-					</section>
+						<img
+							src="img/imagem-perfil.png"
+							alt="Foto de perfil do usuário"
+							class="c-header-contact__image"
+							/>
+						
+					<button class="c-header-contact__notification">2</button>
+					</div>
+					
+					
 				</section>
+			</div>
+				</section>
+			</section>
+		 	
 			</header>
 
 
@@ -137,7 +140,6 @@
 
 
 			<main class="l-main">
-
 				<section class="l-wrapper">
 					<div class="l-main__container">
 
@@ -162,10 +164,7 @@
 						</div>
 					</div>
 
-
-
-
-
+					
 					<aside class="l-sidebar-right" aria-label="Detalhes para 
           citação de trabalho">
 
@@ -291,9 +290,6 @@
 				</section>
 
 
-
-
-
 				<article class="c-main-box">
 
 					<header class="c-main-box__header">
@@ -357,180 +353,8 @@
 
 
 
-				<section class="c-main-box">
-
-					<header class="c-main-box__header">
-						<h2 class="c-main-box__title">Discussões</h2>
-					</header>
 
 
-					<div class="c-discussion-box js-discussion-box">
-
-						<h2 class="c-discussion-box__title">
-							Compartilhe suas ideias ou dúvidas com os autores!
-						</h2>
-
-
-						<ul class="c-discussion-box__icons">
-							<li class="c-discussion-box__item">
-								<img
-									src="img/icon/icone-semente.png"
-									alt="Ícone de uma mão segurando uma planta"/>
-							</li>
-
-							<li class="c-discussion-box__item">
-								<img
-									src="img/icon/icone-conversa.png"
-									alt="Ícone com dois balões de conversa"/>
-							</li>
-
-							<li class="c-discussion-box__item">
-								<img
-									src="img/icon/icone-dupla.png"
-									alt="Ícone com duas pessoas pensando em uma ideia"/>
-							</li>
-						</ul>
-
-
-						<p class="c-discussion-box__paragraph">
-							Sabia que o maior estímulo no desenvolvimento científico e
-							cultural é a curiosidade? Deixe seus questionamentos ou sugestões
-							para o autor!
-						</p>
-
-						<button class="c-discussion-box__button">
-							<img
-								src="img/icon/icone - criar.png"
-								alt="Ícone de adição"
-								class="c-discussion-box__icon"/>
-							criar tópico
-						</button>
-					</div>
-
-
-
-					<div
-						class="c-discussion-box is-discussion-box--visibility js-form-box">
-
-						<h3 class="c-discussion-box__note">
-							Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
-							autores!
-						</h3>
-
-
-						<form class="c-form-topic">
-
-							<div class="c-form-topic__container">
-								<label for="topic" class="c-form-topic__label">
-                  Assunto
-                </label>
-								<input
-									type="text"
-									name="topic"
-									id="topic"
-									placeholder="Defina um tópico sucinto para notificar os autores..."
-									class="c-form-topic__field"/>
-							</div>
-
-
-							<div class="c-form-topic__container">
-								<label for="content" class="c-form-topic__label">
-                  Conteúdo
-                </labe>
-								<textarea
-									name="content"
-									id="content"
-									class="c-form-topic__field c-form-topic__textarea">
-								</textarea>
-
-
-								<footer class="c-form-topic__footer">
-
-									<div class="c-form-topic__elements">
-										<span class="c-form-topic__span"><strong>B</strong></span>
-										<span class="c-form-topic__span"><em>I</em></span>
-									</div>
-
-									<button class="c-form-topic__button">Enviar</button>
-								</footer>
-							</div>
-						</form>
-					</div>
-
-
-					<div class="c-card">
-
-						<header class="c-card__header">
-							<h3 class="c-card__title">Assunto da pergunta aparece aqui</h3>
-							<h4 class="c-card__caption">Carlos Henrique Santos</h4>
-						</header>
-
-
-						<p class="c-card__paragraph">
-							Comecinho da pergunta aparece aqui resente relato inscreve-se no
-							campo da análise da dimensão e impacto de processo formativo
-							situado impacto de processo formativo processo...
-						</p>
-
-
-						<footer class="c-card__footer">
-
-							<ul class="c-card__items">
-								<li class="c-card__item">
-									<img
-										src="img/icon/icone-informacoes.png"
-										alt="Ícone de mais informações"/>
-								</li>
-
-								<li class="c-card__item">
-									<img
-										src="img/icon/icone-preferido.png"
-										alt="Ícone de preferido"/>
-								</li>
-
-								<li class="c-card__item">1 like</li>
-								<li class="c-card__item">1 resposta</li>
-							</ul>
-						</footer>
-					</div>
-
-
-					<div class="c-card">
-
-						<header class="c-card__header">
-							<h3 class="c-card__title">Assunto da pergunta aparece aqui</h3>
-							<h4 class="c-card__caption">Carlos Henrique Santos</h4>
-						</header>
-
-
-						<p class="c-card__paragraph">
-							Comecinho da pergunta aparece aqui resente relato inscreve-se no
-							campo da análise da dimensão e impacto de processo formativo
-							situado impacto de processo formativo processo...
-						</p>
-
-
-						<footer class="c-card__footer">
-
-							<ul class="c-card__items">
-								<li class="c-card__item">
-									<img
-										src="img/icon/icone-informacoes.png"
-										alt="Ícone de mais informações"/>
-								</li>
-
-								<li class="c-card__item">
-									<img
-										src="img/icon/icone-preferido.png"
-										alt="Ícone de preferido"/>
-								</li>
-
-								<li class="c-card__item">1 like</li>
-								<li class="c-card__item">1 resposta</li>
-							</ul>
-						</footer>
-					</div>
-				</section>
 			</main>
 
 
@@ -538,8 +362,10 @@
 
 
 			<footer class="l-footer">
-				<img src="img/banner-rodape.jpeg" alt="Imagem de rodapé do Galoá" class="c-footer__image"/>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ratione laboriosam natus magni dolorum, animi temporibus ipsa, quam numquam fugiat illum nostrum quae vel beatae corrupti ullam quibusdam eum sequi?</p>
 			</footer>
+
+		</section>
 		</section>
 
 

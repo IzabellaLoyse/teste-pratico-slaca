@@ -2,36 +2,30 @@
   *Layout: Layout
 =============================================================================*/
 
-.l-layout {
-		display: grid;
-		grid-template-columns: 200px 1fr 200px;
-		grid-template-rows: auto 1fr auto;
-		grid-template-areas:
-			"sidebar-left header header"
-			"sidebar-left main main"
-			"sidebar-left footer footer";
+.l-layout{
+	display: flex;
 
-			@include breakpoint(1344) {
-				display: flex;
-				flex-direction: column;
-				min-height: 100vh;
-			}
+	@include breakpoint(1344) {
+		flex-direction: column;
+		min-height: 100%;
 	}
-
-
-
-.l-sidebar-left {
-	grid-area: sidebar-left;
 }
 
-.l-header {
-	grid-area: header;
+
+
+.l-layout-fluid {
+	max-width: 90%;
+	margin: 0 auto;
 }
 
-.l-main {
-	grid-area: main;
+
+
+.l-container {
+	display: flex;
+  flex: 1;
+  flex-direction: column;
+
 }
 
-.l-footer {
-	grid-area: footer;
-}
+
+
