@@ -61,6 +61,8 @@
 .c-sidebar-right__buttons {
 	display: flex;
 	flex-direction: row;
+	padding-left: Rem(24);
+
 }
 
 
@@ -119,9 +121,7 @@
 }
 
 
-/* .c-sidebar-right__box {
-	
-} */
+
 
 
 .c-sidebar-right__title {
@@ -129,6 +129,10 @@
 	@include text-shaping(center, $second-letter-spacing);
 	color: map-get($colors, "main-page-color");
 	text-transform: uppercase;
+	padding-bottom: Rem(20);
+	padding-top: Rem(5);
+	padding-left: Rem(20);
+
 }
 
 

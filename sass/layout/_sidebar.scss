@@ -15,16 +15,17 @@
 
 
 .l-sidebar {
-  max-width: 100%;
+
+  height: 100%;
   box-shadow: 0px 0px 10px map-get($colors, "sidebar-shadow-color");
 }
 
-/* .l-sidebar-right {
-  
- 
-} */
+   .l-sidebar-right {
+    padding-top: Rem(25);
 
-/* .l-sidebar-right__wrapper {
-  
+}  
+
+ .l-sidebar-right__wrapper {
+  padding-right: Rem(2);
 }
- */
+  

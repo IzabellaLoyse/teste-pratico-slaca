@@ -6,13 +6,12 @@
 /* === Box about details=== */
 .c-box {
 	width: Rem(250);
-	height: Rem(476);
-	
+	height: Rem(464);
 }
 
 
 .c-box__header {
-	width: Rem(248);
+	width: Rem(250);
 
 	@include breakpoint(1344) {
 		width: 100%;
@@ -60,11 +59,14 @@
 
 /* === Summary and discussions box  === */
 .c-main-box {
-	width: 98%;
+	width: 96%;
 	height: auto;
 	margin-top: Rem(30);
 	display: flex;
 	flex-wrap: wrap;
+	padding-left: Rem(45);
+	padding-right: Rem(45);
+
 	
 }
 
@@ -75,7 +77,9 @@
 
 
 .c-main-box__wrapper {
-	padding: Rem(16) Rem(16) Rem(4);
+	padding-top: Rem(8);
+	padding-bottom: Rem(4);
+
 }
 
 

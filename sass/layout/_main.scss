@@ -10,17 +10,17 @@
 
 .l-main {
 	flex: 1;
-	height: 100vh;
 }
 
 
 .l-wrapper {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
 	@include breakpoint(1344) {
 		flex-direction: column;
-		flex-wrap: wrap;
+	
 	}
 }
 

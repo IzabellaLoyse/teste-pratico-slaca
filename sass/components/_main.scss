@@ -3,7 +3,7 @@
 =============================================================================*/
 
 .c-main__box {
-	padding-top: Rem(15);
+	padding-top: Rem(10);
 
 
 	@include breakpoint(1344) {
@@ -20,7 +20,7 @@
 	color: map-get($colors, "main-page-color");
 	font-weight: map-get($font-weight, "roboto-black");
 	max-width: 800px;
-
+	
 	
 
 	@include breakpoint(1344) {
@@ -32,7 +32,7 @@
 
 
 .c-main__video {
-	padding-top: Rem(20);
+	padding-top: Rem(10);
 	max-width: 100%;
 
 	@include breakpoint(1344) {
