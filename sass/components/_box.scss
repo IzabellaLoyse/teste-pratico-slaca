@@ -7,17 +7,7 @@
 .c-box {
 	width: Rem(250);
 	height: Rem(476);
-	margin-top: Rem(5);
-	margin-right: Rem(156);
 	
-	
-
-	@include breakpoint(1344) {
-		
-		height: auto;
-		margin-top: Rem(30);
-		padding-bottom: Rem(30);
-	}
 }
 
 
