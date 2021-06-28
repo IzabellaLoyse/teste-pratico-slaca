@@ -7,6 +7,16 @@
 .c-box {
 	width: Rem(250);
 	height: Rem(464);
+
+	@include breakpoint(1344) {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+  
+
+	}
+
 }
 
 
@@ -23,6 +33,14 @@
 	overflow-y: scroll;
 	margin-left: Rem(12);
 	margin-top: Rem(12);
+
+	@include breakpoint(1344) {
+		width: 100%;
+		padding-top: Rem(8);
+		padding-bottom: Rem(4);
+		padding-right: Rem(15);
+		padding-left: Rem(15);
+	}
 }
 
 
@@ -59,13 +77,12 @@
 
 /* === Summary and discussions box  === */
 .c-main-box {
-	width: 96%;
+	width: 98%;
 	height: auto;
 	margin-top: Rem(30);
 	display: flex;
 	flex-wrap: wrap;
-	padding-left: Rem(45);
-	padding-right: Rem(45);
+
 
 	
 }
@@ -79,6 +96,8 @@
 .c-main-box__wrapper {
 	padding-top: Rem(8);
 	padding-bottom: Rem(4);
+	padding-right: Rem(15);
+	padding-left: Rem(15);
 
 }
 
@@ -108,10 +127,13 @@
 }
 
 
+
 .c-discussion-box__title {
 	@include text-properties(Rem(21), Rem(18));
 	color: map-get($colors, "main-page-color");
 	font-weight: map-get($font-weight, "roboto-bold");
+	padding-right: Rem(17);
+	padding-left: Rem(17);
 	text-align: center;
 }
 
@@ -119,12 +141,12 @@
 .c-discussion-box__icons {
 	display: flex;
 	flex-direction: row;
-	padding-top: Rem(38);
+	margin-top: Rem(38);
 }
 
 
 .c-discussion-box__item {
-	padding-left: Rem(60);
+	margin-left: Rem(60);
 }
 
 
@@ -135,6 +157,8 @@
 	max-width: 620px;
 	padding-top: Rem(45);
 	padding-bottom: Rem(45);
+	padding-right: Rem(17);
+	padding-left: Rem(17);
 }
 
 
@@ -170,6 +194,8 @@
 	@include text-properties(Rem(17), Rem(14));
 	color: map-get($colors, "box-text-color");
 	text-align: center;
+	padding-left: Rem(17);
+	padding-right: Rem(17);
 	padding-bottom: Rem(50);
 }
 
