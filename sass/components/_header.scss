@@ -2,13 +2,14 @@
   *Components: Header
 =============================================================================*/
 
+
 .c-header__title {
 	color: map-get($colors, "header-title-color");
 	font-weight: map-get($font-weight, "roboto-regular");
 	text-align: left;
-	
+
 	@include breakpoint(1216) {
-		max-width: clamp(25ch , 90%, 75ch);
+		max-width: clamp(25ch, 90%, 75ch);
 		text-align: center;
 		padding-top: Rem(8);
 	}
@@ -29,13 +30,25 @@
 }
 
 
+.c-header-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	@include breakpoint(1216) {
+		flex-direction: column;
+		margin-right: Rem(64);
+	}
+}
+
+
 .c-header__language {
 	padding-top: Rem(8);
 	position: relative;
 
 	@include breakpoint(1216) {
-		padding-left: Rem(16); 
-		margin: auto;
+		padding-left: Rem(16);
+		margin: 1rem auto;
 	}
 
 	&::before {
@@ -48,11 +61,12 @@
 		width: Rem(20);
 
 		@include breakpoint(1216) {
-		top: 14px;
-		left: 20px;
+			top: 14px;
+			left: 20px;
+		}
 	}
 }
-}
+
 
 .c-header__select {
 	width: Rem(95);
@@ -73,34 +87,18 @@
 	@include breakpoint(1216) {
 		padding-right: Rem(32);
 	}
-	
-}
-
-.c-header-group {
-	display: flex;
-	justify-content: space-evenly;
-
-	@include breakpoint(1216) {
-		flex-direction: column;
-		flex-wrap: wrap;
-		margin-right: Rem(64);
-
-	}
-
 }
 
 
 .c-header-contact {
 	padding-bottom: Rem(20);
 	margin-right: Rem(16);
-
-
 }
-	
+
+
 .c-header-contact__box {
 	margin-right: Rem(16);
 	position: relative;
-
 }
 
 
@@ -123,9 +121,6 @@
 }
 
 
-
-
-
 .c-header-contact__image {
 	border-radius: 50%;
 	width: Rem(40);
@@ -133,8 +128,6 @@
 	margin-right: Rem(29);
 	transform: translateY(-0.2rem);
 	cursor: pointer;
-
-	
 }
 
 
@@ -154,11 +147,7 @@
 	padding-top: Rem(2);
 	cursor: pointer;
 
-
 	@include breakpoint(1344) {
 		left: 22px;
 	}
-	
 }
-
-

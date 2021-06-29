@@ -11,6 +11,7 @@
 		map-get($colors, "second-gradient-color") 100%
 	);
 
+
 	@include breakpoint(1344) {
 		width: 100%;
 	}
@@ -31,11 +32,9 @@
 	height: 100%;
 
 	@include breakpoint(1344) {
+		@include flex(flex, row, center, center);
 		height: 100%;
 		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		padding-left: Rem(32);
 	}
 }
@@ -62,7 +61,6 @@
 	display: flex;
 	flex-direction: row;
 	padding-left: Rem(24);
-
 }
 
 
@@ -72,8 +70,6 @@
 	border-radius: $global-border-radius;
 	margin-left: Rem(4);
 	transition: all 0.3s ease-in-out;
-	
-
 
 	&:hover {
 		background-color: darken(map-get($colors, "main-page-color"), 10%);
@@ -98,7 +94,6 @@
 }
 
 
-
 .c-sidebar-button__link {
 	@include flex(flex, row, space-around, center);
 	@include text-properties(Rem(19), Rem(16));
@@ -117,11 +112,7 @@
 .c-sidebar-button__icon {
 	width: Rem(19);
 	height: Rem(19);
-
 }
-
-
-
 
 
 .c-sidebar-right__title {
@@ -129,13 +120,14 @@
 	@include text-shaping(center, $second-letter-spacing);
 	color: map-get($colors, "main-page-color");
 	text-transform: uppercase;
-	padding-bottom: Rem(20);
-	padding-top: Rem(5);
-	padding-left: Rem(20);
-
+	padding: Rem(5) 0 Rem(20) Rem(20);
 }
 
 
+
+
+
+/* === Shared styles === */
 .c-sidebar-button__link,
 .c-sidebar-right__title {
 	font-weight: map-get($font-weight, "roboto-medium");

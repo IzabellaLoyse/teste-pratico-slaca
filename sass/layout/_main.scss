@@ -2,11 +2,6 @@
   *Layout: Main
 =============================================================================*/
 
-.l-main,
-.l-footer {
-	margin-left: Rem(26);
-}
-
 
 .l-main {
 	flex: 1;
@@ -20,11 +15,20 @@
 
 	@include breakpoint(1344) {
 		flex-direction: column;
-	
 	}
 }
 
 
 .l-main__content {
 	width: 100%;
+}
+
+
+
+
+/* === Shared styles === */
+
+.l-main,
+.l-footer {
+	margin-left: Rem(26);
 }

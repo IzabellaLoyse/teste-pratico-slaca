@@ -12,10 +12,10 @@ function toggleMenu(event) {
 
 	const navigationMenu = document.querySelector(".c-menu");
 
-	navigationMenu.classList.toggle("c-menu--active");
+	navigationMenu.classList.toggle("is-menu--active");
 
 	const activeNavigation = navigationMenu.classList.contains(
-		"c-menu--active"
+		"is-menu--active"
 	);
 	event.currentTarget.setAttribute("aria-expanded", activeNavigation);
 

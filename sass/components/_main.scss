@@ -2,14 +2,13 @@
   *Components: Main
 =============================================================================*/
 
+
 .c-main__box {
 	padding-top: Rem(10);
 
-
 	@include breakpoint(1344) {
-    @include flex(flex, column, center, center); 
+		@include flex(flex, column, center, center);
 		width: 100%;
-
 	}
 }
 
@@ -20,14 +19,10 @@
 	color: map-get($colors, "main-page-color");
 	font-weight: map-get($font-weight, "roboto-black");
 	max-width: 800px;
-	
-	
 
 	@include breakpoint(1344) {
 		text-align: center;
-	
 	}
-
 }
 
 
@@ -37,11 +32,8 @@
 	height: auto;
 
 	@include breakpoint(1344) {
-	@include flex(flex, column, center, center);
-	
+		@include flex(flex, column, center, center);
 	}
-
-
 
 	@include breakpoint(800) {
 		margin: auto;

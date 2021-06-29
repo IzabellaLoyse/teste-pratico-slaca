@@ -2,11 +2,8 @@
   *Layout: Sidebar
 =============================================================================*/
 
-.l-sidebar,
-.l-sidebar-right__wrapper {
-	@include flex(flex, column, center, center);
-}
 
+/* === Sidebar Left === */
 
 .l-sidebar-left {
 	flex-basis: 10%;
@@ -20,15 +17,27 @@
 }
 
 
+
+
+
+/* === Sidebar Right === */
+
 .l-sidebar-right {
 	padding-top: Rem(25);
-
- 
 }
 
 
 .l-sidebar-right__wrapper {
 	padding-right: Rem(2);
+}
 
-  
+
+
+
+
+/* === Shared styles === */
+
+.l-sidebar,
+.l-sidebar-right__wrapper {
+	@include flex(flex, column, center, center);
 }

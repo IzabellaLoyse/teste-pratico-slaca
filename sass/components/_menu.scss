@@ -2,9 +2,10 @@
   *Components: Menu
 =============================================================================*/
 
+
 .c-menu {
 	padding-top: Rem(10);
-	
+
 	@include breakpoint(1344) {
 		padding-top: Rem(16);
 		padding-bottom: Rem(32);
@@ -27,41 +28,43 @@
 
 	@include breakpoint(1344) {
 		border: none;
-		padding:Rem(14);
+		padding: Rem(14);
 	}
 }
 
 
+
+
+
 /* === Menu Hamburger === */
 
- .c-mobile-button {
+.c-mobile-button {
 	display: none;
 }
 
 
-
-
 @include breakpoint(700) {
-
-	.c-menu.c-menu--active .c-menu__group {
+	.c-menu.is-menu--active .c-menu__group {
 		display: flex;
 		flex-direction: column;
 		visibility: visible;
 		overflow-y: auto;
 	}
 
+
 	.c-mobile-button {
 		display: flex;
 		border: none;
 		cursor: pointer;
-		margin-right: Rem(30);
+		margin-left: Rem(250);
 		padding: Rem(8) Rem(16);
-		background-color: map-get($colors , "box-header-color");
+		background-color: transparent;
 	}
+
 
 	.c-mobile-button__hamburger {
 		z-index: 9999;
-    border-top: 3px solid;
+		border-top: 3px solid;
 		width: Rem(20);
 		color: map-get($colors, "main-page-color");
 
@@ -78,7 +81,8 @@
 		}
 	}
 
-	.c-menu.c-menu--active .c-mobile-button__hamburger {
+
+	.c-menu.is-menu--active .c-mobile-button__hamburger {
 		border-top-color: transparent;
 
 		&::before {
@@ -93,27 +97,21 @@
 
 
 	.c-menu__group {
+		@include flex(flex, column, center, center);
 		position: fixed;
 		top: 0;
 		left: 0;
-    display: flex;
-		align-items: center;
-		justify-content: center;
 		z-index: 1000;
-    visibility: hidden;
+		visibility: hidden;
 		width: 100vw;
 		height: 100vh;
-		overflow-y: hidden;
-		background-color: map-get($colors, "color-page" );
+		overflow-y: auto;
+		background-color: map-get($colors, "color-page");
 	}
+
 
 	.c-menu__item {
 		padding: Rem(18);
-		font-size: Rem(18.5);
+		font-size: Rem(18);
 	}
 }
-
-
-
-
-	

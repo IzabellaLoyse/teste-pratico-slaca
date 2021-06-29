@@ -4,13 +4,12 @@
 
 .l-layout {
 	display: flex;
-	
+
 	@include breakpoint(1344) {
 		flex-direction: column;
 		min-height: 100%;
 	}
 }
-
 
 
 .l-layout-fluid {
@@ -19,13 +18,8 @@
 }
 
 
-
 .l-container {
 	display: flex;
-  flex: 1;
-  flex-direction: column;
-
+	flex: 1;
+	flex-direction: column;
 }
-
-
-

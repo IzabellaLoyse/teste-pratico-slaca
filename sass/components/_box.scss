@@ -2,8 +2,8 @@
   *Components: Box
 =============================================================================*/
 
-
 /* === Box about details=== */
+
 .c-box {
 	width: Rem(250);
 	height: Rem(464);
@@ -13,10 +13,7 @@
 		height: auto;
 		display: flex;
 		flex-wrap: wrap;
-  
-
 	}
-
 }
 
 
@@ -36,10 +33,7 @@
 
 	@include breakpoint(1344) {
 		width: 100%;
-		padding-top: Rem(8);
-		padding-bottom: Rem(4);
-		padding-right: Rem(15);
-		padding-left: Rem(15);
+		padding: Rem(8) Rem(15) Rem(4) Rem(15);
 	}
 }
 
@@ -75,16 +69,15 @@
 
 
 
+
 /* === Summary and discussions box  === */
+
 .c-main-box {
 	width: 98%;
 	height: auto;
 	margin-top: Rem(30);
 	display: flex;
 	flex-wrap: wrap;
-
-
-	
 }
 
 
@@ -94,11 +87,7 @@
 
 
 .c-main-box__wrapper {
-	padding-top: Rem(8);
-	padding-bottom: Rem(4);
-	padding-right: Rem(15);
-	padding-left: Rem(15);
-
+	padding: Rem(8) Rem(15) Rem(4) Rem(15);
 }
 
 
@@ -106,7 +95,6 @@
 	@include text-properties(Rem(22.75), Rem(14));
 	padding-bottom: Rem(10);
 }
-
 
 
 .c-read-more {
@@ -117,7 +105,6 @@
 }
 
 
-
 .c-discussion-box {
 	@include flex(flex, column, center, center);
 	border-bottom: 1px solid map-get($colors, "border-color");
@@ -125,7 +112,6 @@
 	padding-top: Rem(16);
 	position: relative;
 }
-
 
 
 .c-discussion-box__title {
@@ -157,10 +143,7 @@
 	color: map-get($colors, "topic-text-color");
 	text-align: center;
 	max-width: 620px;
-	padding-top: Rem(45);
-	padding-bottom: Rem(45);
-	padding-right: Rem(17);
-	padding-left: Rem(17);
+	padding: Rem(45) Rem(17) Rem(45) Rem(17);
 }
 
 
@@ -210,6 +193,7 @@
 
 
 /* === Shared styles === */
+
 .c-box,
 .c-box__header,
 .c-main-box {
@@ -249,6 +233,7 @@
 	@include text-shaping(left, $global-letter-spacing);
 	color: map-get($colors, "box-text-color");
 }
+
 
 .c-box__text,
 .c-main-box__text,
