@@ -17,9 +17,9 @@
 </head>
 
 <body>
-  <section class="l-layout ">
+  <section class="l-layout">
     <aside class="l-sidebar-left" aria-label="Menu de navegação da página">
-      <section class="l-sidebar ">
+      <section class="l-sidebar">
         <div class="c-sidebar__box">
           <h1 class="c-sidebar__title">Slaca 2019</h1>
         </div>
@@ -28,6 +28,14 @@
           <img src="img/logo-slaca.png" alt="Imagem do Logo da Slaca" class="c-sidebar__logo" />
 
           <nav class="c-menu">
+            <button class="c-mobile-button" aria-label="Menu aberto" 
+            aria-haspopup="true"
+						aria-controls="c-menu__group"
+						aria-expanded="false">
+              
+              <span class="c-mobile-button__hamburger"></span>
+            </button>
+
             <ul class="c-menu__group">
               <li class="c-menu__item">
                 <a href="#" class="c-menu__link"> Apresentação</a>
@@ -58,7 +66,7 @@
       </section>
     </aside>
 
-    <section class="l-container l-layout-fluid">
+    <section class="l-container">
       <header class="l-header">
         <section class="l-header__container">
           <section class="l-header__wrapper">
@@ -106,7 +114,7 @@
 
       <main class="l-main">
         <section class="l-wrapper">
-          <div class="l-main__container">
+          <div class="l-main__container l-layout-fluid">
             <div class="c-main__box">
               <h1 class="c-main__text">
                 Análise sensorial de preparações funcionais desenvolvidas para
@@ -125,7 +133,7 @@
 
           <aside class="l-sidebar-right l-layout-fluid" aria-label="Detalhes para 
           citação de trabalho">
-            <section class="l-sidebar-right__wrapper ">
+            <section class="l-sidebar-right__wrapper">
               <section class="c-sidebar-right__buttons">
                 <button class="c-sidebar-button">
                   <a href="#" download class="c-sidebar-button__link">
@@ -462,13 +470,8 @@
 
       </main>
 
-      <footer class="l-footer">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-          ratione laboriosam natus magni dolorum, animi temporibus ipsa, quam
-          numquam fugiat illum nostrum quae vel beatae corrupti ullam
-          quibusdam eum sequi?
-        </p>
+      <footer class="l-footer l-layout-fluid">
+        <img src="img/banner-rodape.jpeg" alt="Imagem de rodapé do Galoá" class="c-footer__image"/>
       </footer>
     </section>
   </section>

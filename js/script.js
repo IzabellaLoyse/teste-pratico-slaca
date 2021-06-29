@@ -1,6 +1,35 @@
 const itemMenu = document.querySelectorAll(".c-menu__item");
 const readMore = document.querySelector(".c-read-more");
 const createTopicButton = document.querySelector(".c-discussion-box__button");
+const mobileButton = document.querySelector(".c-mobile-button");
+
+
+/* === Menu Hamburger === */
+
+function toggleMenu(event) {
+	if (event.type === "touchstart") event.preventDefault();
+
+
+	const navigationMenu = document.querySelector(".c-menu");
+
+	navigationMenu.classList.toggle("c-menu--active");
+
+	const activeNavigation = navigationMenu.classList.contains(
+		"c-menu--active"
+	);
+	event.currentTarget.setAttribute("aria-expanded", activeNavigation);
+
+
+	if (activeNavigation) {
+		event.currentTarget.setAttribute("aria-label", "Fechar Menu");
+		
+	} else {
+		event.currentTarget.setAttribute("aria-label", "Abrir Menu");
+	}
+}
+
+mobileButton.addEventListener("click", toggleMenu);
+mobileButton.addEventListener("touchstart", toggleMenu);
 
 
 

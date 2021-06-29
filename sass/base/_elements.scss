@@ -4,7 +4,6 @@
 
 html {
 	box-sizing: border-box;
-	
 }
 
 
@@ -24,7 +23,6 @@ html {
 
 body {
 	height: 100%;
-	overflow-x: hidden;
 	background-color: map-get($colors, "color-page");
 	font-family: $global-font-family;
 	font-size: $global-font-size;

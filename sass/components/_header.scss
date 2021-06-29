@@ -34,8 +34,8 @@
 	position: relative;
 
 	@include breakpoint(1216) {
-		padding-top: Rem(16);	
-		padding-left: Rem(34.5);
+		padding-left: Rem(16); 
+		margin: auto;
 	}
 
 	&::before {
@@ -43,16 +43,16 @@
 		background: no-repeat url(/img/icon/icone-linguagem.png);
 		position: absolute;
 		top: 13.5px;
-		right: 74px;
+		left: 4px;
 		height: Rem(40);
 		width: Rem(20);
 
 		@include breakpoint(1216) {
-			top: 20px;
-		}
+		top: 14px;
+		left: 20px;
 	}
 }
-
+}
 
 .c-header__select {
 	width: Rem(95);
@@ -71,14 +71,21 @@
 	padding-right: Rem(16);
 
 	@include breakpoint(1216) {
-		padding-right: Rem(76);
-
+		padding-right: Rem(32);
 	}
+	
 }
 
 .c-header-group {
 	display: flex;
 	justify-content: space-evenly;
+
+	@include breakpoint(1216) {
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-right: Rem(64);
+
+	}
 
 }
 
@@ -122,15 +129,10 @@
 .c-header-contact__image {
 	border-radius: 50%;
 	width: Rem(40);
-	height: Rem(30);
+	height: Rem(35);
 	margin-right: Rem(29);
 	transform: translateY(-0.2rem);
 	cursor: pointer;
-	
-
-	@include breakpoint(1344) {
-		margin-right: Rem(80);
-	}
 
 	
 }
@@ -138,8 +140,8 @@
 
 .c-header-contact__notification {
 	position: absolute;
-	top: 16px;
-	right: 17px;
+	top: 0;
+	left: 26px;
 	border: none;
 	background-color: map-get($colors, "notification-color");
 	color: map-get($colors, "color-page");
@@ -152,8 +154,9 @@
 	padding-top: Rem(2);
 	cursor: pointer;
 
+
 	@include breakpoint(1344) {
-		top: 16px;
+		left: 22px;
 	}
 	
 }

@@ -2,12 +2,12 @@
   *Layout: Layout
 =============================================================================*/
 
-.l-layout{
+.l-layout {
 	display: flex;
-
+	
 	@include breakpoint(1344) {
 		flex-direction: column;
-		min-height: 100vh;
+		min-height: 100%;
 	}
 }
 

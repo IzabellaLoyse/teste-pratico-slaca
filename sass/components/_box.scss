@@ -142,6 +142,8 @@
 	display: flex;
 	flex-direction: row;
 	margin-top: Rem(38);
+	padding-right: Rem(17);
+	padding-left: Rem(17);
 }
 
 
@@ -181,6 +183,10 @@
 	font-weight: map-get($font-weight, "quicksand-bold");
 	padding-bottom: Rem(6);
 	cursor: pointer;
+
+	@include breakpoint(580) {
+		top: 272px;
+	}
 }
 
 
